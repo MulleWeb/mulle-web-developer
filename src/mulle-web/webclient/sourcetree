@@ -1,0 +1,1 @@
+--nodetype '${MULLE_WEB_CLIENT_NODETYPE:-tar}' --marks 'no-singlephase' --url '${MULLE_WEB_CLIENT_URL:-https://github.com/MulleWeb/MulleWebClient/archive/${MULLE_TAG}.tar.gz}' --branch '${MULLE_WEB_CLIENT_BRANCH}' --tag '${MULLE_WEB_CLIENT_TAG:-latest}' 'MulleWebClient'

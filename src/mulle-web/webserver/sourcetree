@@ -1,0 +1,2 @@
+--nodetype '${MULLE_WEB_SERVER_NODETYPE:-tar}' --marks 'no-singlephase' --url '${MULLE_WEB_SERVER_URL:-https://github.com/MulleWeb/MulleWebServer/archive/${MULLE_TAG}.tar.gz}' --branch '${MULLE_WEB_SERVER_BRANCH}' --tag '${MULLE_WEB_SERVER_TAG:-latest}' 'MulleWebServer'
+
