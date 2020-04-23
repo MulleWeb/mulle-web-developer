@@ -13,6 +13,7 @@ cd exe &&
    curl -L -O "https://raw.githubusercontent.com/MulleWeb/MulleWebClient/prerelease/test/.mulle/etc/env/environment-host-travis-ci-prerelease.sh" >&2
 ) &&
 mulle-sde hostname &&
+mulle-sde environment --global set MULLE_CRAFT_USE_SCRIPT YES &&
 mulle-sde environment &&
 mulle-sde craft --release &&
 cd .. &&
@@ -23,4 +24,5 @@ cd exe2 &&
    cd .mulle/etc/env &&
    curl -L -O "https://raw.githubusercontent.com/MulleWeb/MulleWebServer/prerelease/test/.mulle/etc/env/environment-host-travis-ci-prerelease.sh" >&2
 ) &&
+mulle-sde environment --global set MULLE_CRAFT_USE_SCRIPT YES &&
 mulle-sde craft
