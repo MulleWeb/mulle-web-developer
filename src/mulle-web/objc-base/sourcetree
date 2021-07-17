@@ -1,0 +1,2 @@
+--nodetype 'tar' --marks no-singlephase --tag '${MULLE_WEB_TAG:-latest}' --url '${MULLE_WEB_URL:-https://github.com/MulleWeb/MulleWeb/archive/${MULLE_TAG}.tar.gz}' 'MulleWeb'
+
