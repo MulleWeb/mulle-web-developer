@@ -24,7 +24,7 @@
 
       stream = [response createStreamAndSendHeaderData];
       plist  = @{ @"helloWorld": @"VfL Bochum 1848" };
-      [plist jsonUTF8DataToStream:stream];
+      [plist mullePrintJSONToStream:stream];
       [stream flush];
       return( nil);
                     // sent this ourselves, thank you
