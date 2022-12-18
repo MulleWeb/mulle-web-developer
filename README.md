@@ -9,7 +9,7 @@ development with [MulleWeb](//github.com/MulleWeb).
 
 Project      | Build Status
 -------------|-----------------------------------
-![Logo](https://raw.githubusercontent.com/MulleWeb/mulle-web-developer/release/logo.png)| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg) [![Build Status](https://travis-ci.org/MulleWeb/mulle-web-developer.svg?branch=release)](https://travis-ci.org/MulleWeb/mulle-web-developer)
+![Logo](https://raw.githubusercontent.com/MulleWeb/mulle-web-developer/release/logo.png)| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg) [![Build Status](https://github.com/MulleWeb/mulle-web-developer/workflows/CI/badge.svg?branch=release)](https://github.com/MulleWeb/mulle-web-developer/actions)
 
 
 ## Usage
@@ -113,14 +113,12 @@ wget -qO - https://raw.githubusercontent.com/MulleWeb/mulle-web-developer/releas
 Otherwise first add the necessary key to *apt*:
 
 ```
-wget -qO - "https://www.codeon.de/dists/codeon-pub.asc" | sudo apt-key add -
 wget -qO - "https://www.mulle-kybernetik.com/dists/debian-admin-pub.asc" | sudo apt-key add -
 ```
 
 ##### Add the *apt* repository source list:
 
 ```
-echo "deb [arch=amd64] http://download.codeon.de `lsb_release -c -s` main" | sudo tee /etc/apt/sources.list.d/codeon.de-main.list > /dev/null
 echo "deb [arch=all] http://www.mulle-kybernetik.com `lsb_release -c -s` main" | sudo tee "/etc/apt/sources.list.d/mulle-kybernetik.com-main.list" > /dev/null
 ```
 
@@ -190,7 +188,9 @@ mulle-test;latest" \
 ./installer-all ~ no
 ```
 
-You will need to install [mulle-clang](//github.com/Codeon-GmbH/mulle-clang)
+## Install mulle-clang
+
+You will need to install [mulle-clang](//github.com/mulle-cc/mulle-clang-project)
 yourself though.
 
 

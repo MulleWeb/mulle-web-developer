@@ -32,11 +32,11 @@ int   main( int argc, const char * argv[])
    {
       // get current error
       error = [NSError mulleExtract];
-      fprintf( stderr, "Error: %s\n", [[error description] UTF8String]);
+      mulle_fprintf( stderr, "Error: %@\n", [error description]);
       return( 1);
    }
 
-   printf( "%s\n", [[plist description] UTF8String]);
+   mulle_printf( "%@\n", [plist description]);
    return( 0);
 }
 
