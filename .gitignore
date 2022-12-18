@@ -7,3 +7,5 @@ kitchen/
 build-*.d/
 publisher-info.sh
 *.sublime-workspace
+var/
+build-*/

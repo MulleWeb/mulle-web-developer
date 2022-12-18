@@ -7,7 +7,7 @@ mulle-sde/mulle-sde-developer; \
 mulle-c/mulle-c-developer; \
 mulle-objc/mulle-objc-developer; \
 MulleFoundation/mulle-foundation-developer; \
-MulleFoundation/foundation-developer;
+MulleFoundation/foundation-developer; \
 MulleWeb/mulle-web-developer;
 
 ENV SDE_PROJECTS    mulle-test
