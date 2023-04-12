@@ -1,0 +1,38 @@
+## Usage
+
+The following examples show how to set up a *MulleWeb* project with the
+*mulle-sde* environment.
+
+### Create an Objective-C executable project
+
+Use either `mulle-web/webclient-developer` or `mulle-web/webserver-developer`
+as the starting point:
+
+```
+mkdir foo
+cd foo
+mulle-sde init -m mulle-web/webserver-developer executable
+```
+
+Just follow the instructions *mulle-sde* prints.
+
+> There will be an error because of a missing MulleObjCDecimalLibrary. This
+> is normal.
+
+
+### Create an Objective-C library project
+
+```
+mulle-sde init -d foolib -m mulle-web/webclient-developer library
+cd foolib
+mulle-sde craft
+```
+
+
+### Don't create a project but get ObjC libraries built
+
+```
+mulle-sde init -m mulle-web/webclient-developer none
+mulle-sde craft
+```
+

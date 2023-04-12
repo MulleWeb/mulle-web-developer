@@ -1,63 +1,3 @@
-# mulle-web-developer
-
-#### 🎒 MulleWeb developer kit for mulle-sde
-
-**mulle-web-developer** is a collection of *mulle-sde extensions* to support
-development with [MulleWeb](//github.com/MulleWeb).
-
-
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//mulle-web-developer.svg?branch=release) [![Build Status](https://github.com//mulle-web-developer/workflows/CI/badge.svg?branch=release)](//github.com//mulle-web-developer/actions)| [RELEASENOTES](RELEASENOTES.md) |
-
-
-
-## Usage
-
-The following examples show how to set up a *MulleWeb* project with the
-*mulle-sde* environment.
-
-### Create an Objective-C executable project
-
-Use either `mulle-web/webclient-developer` or `mulle-web/webserver-developer`
-as the starting point:
-
-```
-mkdir foo
-cd foo
-mulle-sde init -m mulle-web/webserver-developer executable
-```
-
-Just follow the instructions *mulle-sde* prints.
-
-> There will be an error because of a missing MulleObjCDecimalLibrary. This
-> is normal.
-
-
-### Create an Objective-C library project
-
-```
-mulle-sde init -d foolib -m mulle-web/webclient-developer library
-cd foolib
-mulle-sde craft
-```
-
-
-### Don't create a project but get ObjC libraries built
-
-```
-mulle-sde init -m mulle-web/webclient-developer none
-mulle-sde craft
-```
-
-
-
-
-## You are here
-
-![package relationships](dox/relationships.svg)
-
-
 ## Install
 
 The install will need about 2 GB of free space.
@@ -194,10 +134,4 @@ SDE_PROJECTS="mulle-sde-developer;latest \
 mulle-test;latest" \
 ./installer-all ~ no
 ```
-
-
-## Author
-
-[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
-
 

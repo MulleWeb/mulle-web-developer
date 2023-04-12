@@ -1,0 +1,12 @@
+{
+   project =
+   {
+      description="🎒 MulleWeb developer kit for mulle-sde";
+      domain="github";
+      name="mulle-web-developer";
+      user="MulleWeb";
+      repo="mulle-web-developer";
+      homepage="https://github.com/MulleWeb/mulle-web-developer";
+      license="BSD-3-Clause"
+   };
+}

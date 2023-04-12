@@ -9,3 +9,5 @@ publisher-info.sh
 *.sublime-workspace
 var/
 build-*/
+mulle-template-composer-*
+mulle-markdown-preview-*.html
