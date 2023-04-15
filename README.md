@@ -2,6 +2,7 @@
 
 #### 🎒 MulleWeb developer kit for mulle-sde
 
+
 **mulle-web-developer** is a collection of *mulle-sde extensions* to support
 development with [MulleWeb](//github.com/MulleWeb).
 
@@ -53,9 +54,10 @@ mulle-sde craft
 
 
 
-## You are here
 
-![package relationships](dox/relationships.svg)
+## Overview
+
+
 
 
 ## Install
@@ -196,8 +198,13 @@ mulle-test;latest" \
 ```
 
 
+## Platforms and Compilers
+
+All platforms and compilers supported by
+[mulle-c11](//github.com/mulle-c/mulle-c11).
+
+
 ## Author
 
 [Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
-
 
