@@ -1,3 +1,8 @@
+## 0.2.0
+
+* environment-init was a bad idea and it has been removed along with environment-upgrade
+
+
 ### 0.1.5
 
 * Various small improvements
