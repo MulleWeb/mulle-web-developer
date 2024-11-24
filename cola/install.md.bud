@@ -90,7 +90,7 @@ sudo docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -i -t --r
 ### Script
 
 *mulle-sde* provides an
-[installer-all](https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all)
+[installer-all](https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all)
 script to install *mulle-web-developer* into `/usr` (or some other place).
 This is suitable for environments without supported package managers like for
 instance *Fedora* or *FreeBSD*.
@@ -108,7 +108,7 @@ instance *Fedora* or *FreeBSD*.
 #### Install into /usr with sudo
 
 ``` sh
-curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all' && \
+curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' && \
 chmod 755 installer-all && \
 sudo OTHER_PROJECTS="MulleWeb/mulle-web-developer;latest \
 MulleFoundation/foundation-developer;latest \
@@ -123,7 +123,7 @@ mulle-test;latest" \
 #### Install into ${HOME} (without sudo)
 
 ``` sh
-curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all' && \
+curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' && \
 chmod 755 installer-all && \
 OTHER_PROJECTS="MulleWeb/mulle-web-developer;latest \
 MulleFoundation/foundation-developer;latest \

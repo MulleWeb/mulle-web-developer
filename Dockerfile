@@ -27,10 +27,10 @@ RUN DEBIAN_FRONTEND=noninteractive \
       apt-get update \
    && apt-get -y install cmake curl git ninja-build build-essential uuid-runtime bsdmainutils wget \
 \
-   && wget "https://raw.githubusercontent.com/mulle-sde/mulle-sde/${MULLE_SDE_DEFAULT_VERSION:-release}/bin/installer-all" \
+   && wget "https://raw.githubusercontent.com/mulle-sde/mulle-sde/${MULLE_SDE_DEFAULT_VERSION:-master}/bin/installer-all" \
    && chmod 755 installer-all \
    && ./installer-all /usr no \
 \
-   && wget "https://github.com/mulle-cc/mulle-clang-project/releases/download/14.0.6.2/mulle-clang-14.0.6.2-bullseye-amd64.deb"  \
-   && dpkg --install "mulle-clang-14.0.6.2-bullseye-amd64.deb"
+   && wget "https://github.com/mulle-cc/mulle-clang-project/releases/download/17.0.6.2/mulle-clang-17.0.6.2-bookworm-amd64.deb"  \
+   && dpkg --install "mulle-clang-17.0.6.2-bookworm-amd64.deb"
 
