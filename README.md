@@ -9,7 +9,7 @@ development with [MulleWeb](//github.com/MulleWeb).
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg?branch=release) [![Build Status](https://github.com/MulleWeb/mulle-web-developer/workflows/CI/badge.svg?branch=release)](//github.com/MulleWeb/mulle-web-developer/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg) [![Build Status](https://github.com/MulleWeb/mulle-web-developer/workflows/CI/badge.svg)](//github.com/MulleWeb/mulle-web-developer/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
@@ -153,7 +153,7 @@ sudo docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -i -t --r
 ### Script
 
 *mulle-sde* provides an
-[installer-all](https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all)
+[installer-all](https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all)
 script to install *mulle-web-developer* into `/usr` (or some other place).
 This is suitable for environments without supported package managers like for
 instance *Fedora* or *FreeBSD*.
@@ -171,7 +171,7 @@ instance *Fedora* or *FreeBSD*.
 #### Install into /usr with sudo
 
 ``` sh
-curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all' && \
+curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' && \
 chmod 755 installer-all && \
 sudo OTHER_PROJECTS="MulleWeb/mulle-web-developer;latest \
 MulleFoundation/foundation-developer;latest \
@@ -186,7 +186,7 @@ mulle-test;latest" \
 #### Install into ${HOME} (without sudo)
 
 ``` sh
-curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/release/bin/installer-all' && \
+curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' && \
 chmod 755 installer-all && \
 OTHER_PROJECTS="MulleWeb/mulle-web-developer;latest \
 MulleFoundation/foundation-developer;latest \
