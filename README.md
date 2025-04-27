@@ -7,9 +7,9 @@ development with [MulleWeb](//github.com/MulleWeb).
 
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg) [![Build Status](https://github.com/MulleWeb/mulle-web-developer/workflows/CI/badge.svg)](//github.com/MulleWeb/mulle-web-developer/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/mulle-web-developer.svg) [![Build Status](https://github.com/MulleWeb/mulle-web-developer/workflows/CI/badge.svg)](//github.com/MulleWeb/mulle-web-developer/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for mulle-web-developer](https://deepwiki.com/MulleWeb/mulle-web-developer)
 
 
 
