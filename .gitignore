@@ -14,3 +14,11 @@ mulle-markdown-preview-*.html
 cola/wilted/
 .mulle/etc/make/build-dir
 vgcore.*
+test*/**/*.test.*
+/*.md
+!/AGENTS.md
+!/README.md
+build-3d23/
+build-9863/
+build-c9dc/
+environment-user-*.sh
