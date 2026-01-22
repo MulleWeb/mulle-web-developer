@@ -43,7 +43,7 @@ jobs:
 
     # takes to long on github macosx, we just do executable
     - name: Foundation Library
-      if: ${{ ! startsWith(runner.name, 'masox-') }}
+      if: ${{ ! startsWith(runner.name, 'macosx-') }}
       run: |
         mulle-sde -DMULLE_SDE_EXTENSION_BASE_PATH="${PWD}/src" init -d lib -m mulle-web/webclient-developer library &&
         cd lib &&
