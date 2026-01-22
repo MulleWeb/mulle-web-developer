@@ -41,7 +41,9 @@ jobs:
       run: |
         mulle-sde -DMULLE_SDE_EXTENSION_BASE_PATH="${PWD}/src" extension show
 
+    # takes to long on github macosx, we just do executable
     - name: Foundation Library
+      if: ${{ ! startsWith(runner.name, 'masox-') }}
       run: |
         mulle-sde -DMULLE_SDE_EXTENSION_BASE_PATH="${PWD}/src" init -d lib -m mulle-web/webclient-developer library &&
         cd lib &&
