@@ -49,6 +49,7 @@ jobs:
         mulle-sde environment &&
         echo "Adding environment-host-ci-prerelease file from Foundation/test" >&2 &&
         curl -L --output .mulle/etc/env/environment-host-ci-prerelease.sh "https://raw.githubusercontent.com/MulleFoundation/Foundation/prerelease/test/.mulle/etc/env/environment-host-ci-prerelease.sh" >&2 &&
+        mulle-sde environment --global set --concat MULLE_CRAFT_USE_SCRIPTS openssl-build.darwin &&
         mulle-sde craft
         
     - name: Foundation Executable
@@ -58,6 +59,7 @@ jobs:
         cd exe &&
         echo "Adding environment-host-ci-prerelease file from Foundation/test" >&2 &&
         curl -L --output .mulle/etc/env/environment-host-ci-prerelease.sh "https://raw.githubusercontent.com/MulleFoundation/Foundation/prerelease/test/.mulle/etc/env/environment-host-ci-prerelease.sh" >&2 &&
+        mulle-sde environment --global set --concat MULLE_CRAFT_USE_SCRIPTS openssl-build.darwin &&
         mulle-sde craft --release &&
         [ -x "./kitchen/Release/exe" -o "./kitchen/exe" ] &&
         ( [ ! -x "./kitchen/Release/exe" ] || "./kitchen/Release/exe" ) &&
