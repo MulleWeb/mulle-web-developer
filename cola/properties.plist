@@ -6,6 +6,7 @@
       name="mulle-web-developer";
       user="MulleWeb";
       repo="mulle-web-developer";
+      version="0.2.5";
       homepage="https://github.com/MulleWeb/mulle-web-developer";
       license="BSD-3-Clause"
    };
